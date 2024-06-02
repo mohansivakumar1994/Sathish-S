@@ -1,0 +1,55 @@
+{
+	"name": "git-indicators",
+	"displayName": "Git Indicators",
+	"description": "Atom like git counters",
+	"version": "2.1.2",
+	"publisher": "lamartire",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lamartire/vscode-git-indicators"
+	},
+	"homepage": "https://github.com/lamartire/vscode-git-indicators",
+	"engines": {
+		"vscode": "^1.1.36"
+	},
+	"icon": "icon.jpg",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:.git"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.5",
+		"@types/node": "^12.11.1",
+		"@types/throttle-debounce": "^2.1.0",
+		"mocha": "^6.0.0",
+		"prettier": "^1.10.2",
+		"tslint": "^5.9.1",
+		"tslint-plugin-prettier": "^2.0.0",
+		"typescript": "^3.0.1",
+		"vscode": "^1.1.36"
+	},
+	"dependencies": {
+		"promisify-node": "^0.5.0",
+		"throttle-debounce": "^2.0.1",
+		"typed-promisify": "^0.4.0"
+	},
+	"__metadata": {
+		"id": "18620c48-225a-4243-9c60-61204b19d4b4",
+		"publisherId": "1154ad5e-282c-4e3f-8819-bcef2136fdc8",
+		"publisherDisplayName": "lamartire",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1709581222518
+	}
+}

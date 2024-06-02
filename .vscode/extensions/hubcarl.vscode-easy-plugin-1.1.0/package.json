@@ -1,0 +1,98 @@
+{
+	"name": "vscode-easy-plugin",
+	"displayName": "vscode-easy-plugin",
+	"description": "easywebpack vscode plugin",
+	"version": "1.1.0",
+	"icon": "images/easy.png",
+	"publisher": "hubcarl",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./extension.js",
+	"activationEvents": [
+		"onCommand:easy-vs-cli.app.react",
+		"onCommand:easy-vs-cli.app.vue",
+		"onFileSystemAccess:vsls",
+		"onFileSystem:vsls",
+		"*"
+	],
+	"contributes": {
+		"views": {
+			"easy-vs-cli": [
+				{
+					"id": "easy-vs-cli.vue",
+					"name": "创建 Vue 项目"
+				},
+				{
+					"id": "easy-vs-cli.react",
+					"name": "创建 React 项目"
+				},
+				{
+					"id": "easy-vs-cli.doc",
+					"name": "开发文档"
+				}
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "easy-vs-cli",
+					"title": "easy",
+					"icon": "images/easy-icon.png"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "TypeScript configuration",
+			"properties": {
+				"easy.home": {
+					"type": "string",
+					"default": "",
+					"description": "Specifies the folder path to locate project"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"build": "npx vsce package",
+		"pub": "npx vsce publish"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^8.10.25",
+		"eslint": "^4.11.0",
+		"typescript": "^3.1.4",
+		"vsce": "^1.71.0",
+		"vscode": "^1.1.25"
+	},
+	"dependencies": {
+		"chalk": "^2.4.1",
+		"compressing": "^1.4.0",
+		"mz-modules": "^2.1.0",
+		"shelljs": "^0.8.3",
+		"urllib": "^2.31.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/easy-team/vscode-easy-plugin.git"
+	},
+	"author": "hubcarl@126.com",
+	"license": "MIT",
+	"homepage": "https://github.com/easy-team/vscode-easy-plugin",
+	"__metadata": {
+		"id": "c844fe16-9c61-4cf8-a535-d940a1f2a48e",
+		"publisherId": "267cdd87-87f4-4720-bbeb-ed887a3c9c07",
+		"publisherDisplayName": "hubcarl",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1712079697134
+	}
+}

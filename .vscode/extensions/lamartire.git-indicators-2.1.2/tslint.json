@@ -1,0 +1,19 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-plugin-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "no-unused-variable": true,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "prettier": [true, {
+      "printWidth": 100,
+      "semi": false,
+      "singleQuote": true,
+      "trailingComma": "none"
+    }]
+  },
+  "rulesDirectory": []
+}

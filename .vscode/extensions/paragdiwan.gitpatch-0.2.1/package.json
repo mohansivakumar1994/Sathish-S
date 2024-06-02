@@ -1,0 +1,112 @@
+{
+	"name": "gitpatch",
+	"displayName": "Git Patch",
+	"description": "Creates supplied diff output (i.e. 'a patch') and applies it to files. ",
+	"version": "0.2.1",
+	"publisher": "paragdiwan",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"author": {
+		"name": "Parag Diwan"
+	},
+	"categories": [
+		"Other"
+	],
+	"galleryBanner": {
+		"color": "#f0efe7",
+		"theme": "light"
+	},
+	"icon": "images/git_icon.png",
+	"activationEvents": [
+		"onCommand:extension.gitCreatePatchFromStaged",
+		"onCommand:extension.gitCreatePatchFromUnstaged",
+		"onCommand:extension.gitApplyPatch"
+	],
+	"keywords": [
+		"git",
+		"patch",
+		"apply",
+		"git patch",
+		"git diff",
+		"diff"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/paragdiwan/vscode-git-patch"
+	},
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.gitCreatePatchFromStaged",
+				"title": "Git: Creates a patch from staged files"
+			},
+			{
+				"command": "extension.gitCreatePatchFromUnstaged",
+				"title": "Git: Creates a patch from unstaged files"
+			},
+			{
+				"command": "extension.gitApplyPatch",
+				"title": "Git: Apply a patch from existing patch file"
+			}
+		],
+		"menus": {
+			"scm/title": [
+				{
+					"command": "extension.gitCreatePatchFromStaged",
+					"when": "scmProvider == git",
+					"group": "inline"
+				},
+				{
+					"command": "extension.gitCreatePatchFromUnstaged",
+					"when": "scmProvider == git",
+					"group": "inline"
+				},
+				{
+					"command": "extension.gitApplyPatch",
+					"when": "scmProvider == git",
+					"group": "inline"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "extension.gitCreatePatchFromStaged",
+					"group": "MyGroup@1"
+				},
+				{
+					"command": "extension.gitCreatePatchFromUnstaged",
+					"group": "MyGroup@1"
+				},
+				{
+					"command": "extension.gitApplyPatch",
+					"group": "MyGroup@1"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "1c2d0e20-1a4e-4d22-a8bb-be29a274bf49",
+		"publisherId": "480be4c7-9e3d-4e98-9f55-db6eebfb1d08",
+		"publisherDisplayName": "Parag Diwan",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1717309888056,
+		"source": "gallery"
+	}
+}

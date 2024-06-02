@@ -1,0 +1,61 @@
+{
+	"name": "vscode-meta",
+	"displayName": "vscode-meta",
+	"description": "Unity3D & CocosCreator Meta Files Watcher",
+	"version": "0.0.1",
+	"publisher": "hubluesky",
+	"repository": {
+		"type": "GitHub",
+		"url": "https://github.com/hubluesky/vscode-unitymeta"
+	},
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"Unity3D",
+		"Unity",
+		"CocosCreator",
+		"CocosCreator 2D",
+		"CocosCreator 3D",
+		"meta",
+		"file"
+	],
+	"activationEvents": [
+		"workspaceContains:assets"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.47.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^14.0.27",
+		"eslint": "^7.6.0",
+		"@typescript-eslint/eslint-plugin": "^3.8.0",
+		"@typescript-eslint/parser": "^3.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.0.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.4.0"
+	},
+	"__metadata": {
+		"id": "fb8ca666-af98-476f-860c-3b5abb2e5bf6",
+		"publisherId": "d0efb829-d8c6-40f3-813d-40710e7fa07a",
+		"publisherDisplayName": "hubluesky",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1712079701923
+	}
+}

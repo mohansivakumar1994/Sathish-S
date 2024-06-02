@@ -1,0 +1,47 @@
+{
+	"name": "lucky-hub",
+	"displayName": "Lucky Hub (Dark)",
+	"description": "My theme that i use",
+	"version": "1.0.0",
+	"publisher": "LuckCGA",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Luck-CGA/MyTheme.git"
+	},
+	"keywords": [
+		"theme",
+		"dark theme",
+		"LuckyHub",
+		"Luckhub",
+		"Luck theme",
+		"Lucktheme",
+		"Luck's theme",
+		"Luck theme dark",
+		"Luck drak theme"
+	],
+	"engines": {
+		"vscode": "^1.79.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "LuckCGA",
+				"uiTheme": "vs-dark",
+				"path": "./themes/LuckCGA-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "14da60d4-16cd-4bfe-8c9a-30ca5e0084cf",
+		"publisherId": "60521348-3dd4-400d-a736-676629ef863d",
+		"publisherDisplayName": "Lucas Caspirro Gitti Alcaraz",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1708970268593
+	}
+}

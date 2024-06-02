@@ -1,0 +1,77 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "maixiaojie",
+      "name": "麦晓杰 lavna",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11681287?v=4",
+      "profile": "https://blog.mcust.cn/blogs/maixiaojie",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "2234839",
+      "name": "崮生",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/28727933?v=4",
+      "profile": "https://www.shenzilong.cn",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Dennis8274",
+      "name": "Dennis",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20966346?v=4",
+      "profile": "http://blog.dengxf.cn",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kurryzhang",
+      "name": "kurryzhang",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/30166664?v=4",
+      "profile": "https://github.com/kurryzhang",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "Ord1nAryJ",
+      "name": "Ord1nAryJ",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35832921?v=4",
+      "profile": "https://github.com/Ord1nAryJ",
+      "contributions": [
+        "example"
+      ]
+    },
+    {
+      "login": "BlackblackZhang",
+      "name": "blackZhang",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21030035?v=4",
+      "profile": "https://github.com/BlackblackZhang",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "wenyujie12",
+      "name": "wenyujie12",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/57449610?v=4",
+      "profile": "https://github.com/wenyujie12",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "git-emoji-zh",
+  "projectOwner": "maixiaojie",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
